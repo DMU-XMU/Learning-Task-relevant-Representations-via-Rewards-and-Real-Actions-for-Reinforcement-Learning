@@ -2,7 +2,7 @@ python launch.py \
 --env dmc.cartpole.swingup \
 --agent curl \
 --base sac \
---auxiliary cresp \
+--auxiliary rra \
 --num_sources 2 \
 --dynamic -bg -tbg \
 --disenable_default \
