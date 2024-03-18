@@ -20,7 +20,7 @@ bash run.sh
 
 Modify the `--env` argument in `run.sh` to specify a different task, use the `--agent` argument to select a reinforcement learning agent from either the curl agent or the drq agent, and utilize the `--auxiliary` argument to choose an auxiliary task between cresp and our method (denoted by rra).
 
-## Reproduce the Results on Distracting DeepMind Control
+## Reproduce the Results on CARLA
 ### install CARLA
 Please firstly install UE4.26.
 
@@ -40,6 +40,21 @@ pip install networkx
 ```
 
 
+### run experiments on CARLA
+First open the CARLA engine:
+Terminal 1:
+```
+cd CARLA_0.9.6
+bash CarlaUE4.sh --RenderOffScreen --carla-rpc-port=1314 --fps=20
+```
+
+Then run experiments on CARLA using our auxiliary task:
+Terminal 2:
+```
+bash runCarla096.sh
+```
+
+The results will be stored under `data` directory.
 
 
 
