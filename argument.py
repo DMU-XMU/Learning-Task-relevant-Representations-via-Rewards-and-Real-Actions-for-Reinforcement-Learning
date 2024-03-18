@@ -61,7 +61,7 @@ def parse_args():
     parser.add_argument('--save_video', default=False, action='store_true')
     # seed
     parser.add_argument('--seed_list', '-s', nargs='+', type=int,
-                         default=[0])
+                         default=[0, 1, 2])
     parser.add_argument('--seed', default=1, type=int)
     # cuda
     parser.add_argument('--no-cuda', action='store_true', default=False)
