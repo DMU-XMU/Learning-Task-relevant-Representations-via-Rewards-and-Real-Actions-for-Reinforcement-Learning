@@ -6,13 +6,6 @@ This is the code of paper **Learning Task-relevant Representations via Rewards a
 
 ## Requirements
 
-Python 3.6.9
-PyTorch 1.10
-tqdm
-dm_control 0.0.322773188
-mujoco-py 2.0.2.13
-distracting_control==1.0.0
-
 ```
 pip install -r requirements.txt
 ```
