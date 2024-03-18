@@ -18,7 +18,8 @@ python launch.py \
 --rs_fc \
 --discount_of_rs 0.8 \
 --extr_update_via_qfloss True \
---cuda_id 0
+--cuda_id 0 \
+-s 0
 
 # python launch.py \
 # --env dmc.cartpole.swingup_sparse \
@@ -40,7 +41,8 @@ python launch.py \
 # --rs_fc \
 # --discount_of_rs 0.8 \
 # --extr_update_via_qfloss True \
-# --cuda_id 0
+# --cuda_id 0 \
+# -s 0
 
 # python launch.py \
 # --env dmc.cheetah.run \
@@ -62,7 +64,8 @@ python launch.py \
 # --rs_fc \
 # --discount_of_rs 0.8 \
 # --extr_update_via_qfloss True \
-# --cuda_id 0
+# --cuda_id 0 \
+# -s 0
 
 # python launch.py \
 # --env dmc.hopper.stand \
@@ -84,7 +87,8 @@ python launch.py \
 # --rs_fc \
 # --discount_of_rs 0.8 \
 # --extr_update_via_qfloss True \
-# --cuda_id 1
+# --cuda_id 0 \
+# -s 0
 
 # python launch.py \
 # --env dmc.reacher.easy \
@@ -106,7 +110,8 @@ python launch.py \
 # --rs_fc \
 # --discount_of_rs 0.8 \
 # --extr_update_via_qfloss True \
-# --cuda_id 0
+# --cuda_id 0 \
+# -s 0
 
 # python launch.py \
 # --env dmc.ball_in_cup.catch \
@@ -128,4 +133,5 @@ python launch.py \
 # --rs_fc \
 # --discount_of_rs 0.8 \
 # --extr_update_via_qfloss True \
-# --cuda_id 1
+# --cuda_id 0 \
+# -s 0
