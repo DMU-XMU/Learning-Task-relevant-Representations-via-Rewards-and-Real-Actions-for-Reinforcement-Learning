@@ -9,16 +9,16 @@ This is the code of paper **Learning Task-relevant Representations via Rewards a
 ```
 pip install -r requirements.txt
 ```
-<!-- `conda install -y tensorboard` -->
 
+## Reproduce the Results on Distracting DeepMind Control
 
-## Reproduce the Results
-
-For example, run experiments on Cartpole Swingup with color distractions
+For example, run experiments on Cartpole Swingup with background distractions using our auxiliary task
 
 ``` bash
 bash run.sh
 ```
+
+Modify the `--env` argument in `run.sh` to specify a different task, use the `--agent` argument to select a reinforcement learning agent from either the curl agent or the drq agent, and utilize the `--auxiliary` argument to choose an auxiliary task between cresp and our method (denoted by rra).
 
 
 ## Citation
