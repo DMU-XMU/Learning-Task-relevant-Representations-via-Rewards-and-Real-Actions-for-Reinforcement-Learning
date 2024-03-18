@@ -1,7 +1,7 @@
-# Learning Task-relevant Representations for Generalization via Characteristic Functions of Reward Sequence Distributions
+# Learning Task-relevant Representations via Rewards and Real Actions for Reinforcement Learning
 
 
-This is the code of paper **Learning Task-relevant Representations for Generalization via Characteristic Functions of Reward Sequence Distributions**. Rui Yang, Jie Wang*, Zijie Geng, Mingxuan Ye, Shuiwang Ji, Bin Li, Feng Wu. SIGKDD 2022. \[[arXiv](https://arxiv.org/abs/2205.10218)\]
+This is the code of paper **Learning Task-relevant Representations via Rewards and Real Actions for Reinforcement Learning**.
 
 
 ## Requirements
@@ -42,7 +42,3 @@ If you find this code useful, please consider citing the following paper.
   year={2022}
 }
 ```
-
-## Remarks
-
-We will release our data reported in our paper soon.
