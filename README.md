@@ -22,15 +22,15 @@ Modify the `--env` argument in `run.sh` to specify a different task, use the `--
 
 ## Reproduce the Results on CARLA
 ### install CARLA
-Please firstly install UE4.26.
+Please first install UE4.26 before installing CARLA.
 
 Download CARLA from https://github.com/carla-simulator/carla/releases, e.g., https://carla-assets-internal.s3.amazonaws.com/Releases/Linux/CARLA_0.9.6.tar.gz.
 
 Add to your python path:
 ```
-export PYTHONPATH=$PYTHONPATH:/home/rmcallister/code/bisim_metric/CARLA_0.9.6/PythonAPI
-export PYTHONPATH=$PYTHONPATH:/home/rmcallister/code/bisim_metric/CARLA_0.9.6/PythonAPI/carla
-export PYTHONPATH=$PYTHONPATH:/home/rmcallister/code/bisim_metric/CARLA_0.9.6/PythonAPI/carla/dist/carla-0.9.8-py3.5-linux-x86_64.egg
+export PYTHONPATH=$PYTHONPATH:/home/XXXX/CARLA_0.9.6/PythonAPI
+export PYTHONPATH=$PYTHONPATH:/home/XXXX/CARLA_0.9.6/PythonAPI/carla
+export PYTHONPATH=$PYTHONPATH:/home/XXXX/CARLA_0.9.6/PythonAPI/carla/dist/carla-0.9.8-py3.5-linux-x86_64.egg
 ```
 
 Install:
@@ -39,9 +39,11 @@ pip install pygame
 pip install networkx
 ```
 
+Move the 'carla_env.py' file to the `/home/XXXX/CARLA_0.9.6/PythonAPI/carla/agents/navigation` directory.
 
 ### run experiments on CARLA
 First open the CARLA engine:
+
 Terminal 1:
 ```
 cd CARLA_0.9.6
@@ -49,22 +51,15 @@ bash CarlaUE4.sh --RenderOffScreen --carla-rpc-port=1314 --fps=20
 ```
 
 Then run experiments on CARLA using our auxiliary task:
+
 Terminal 2:
 ```
 bash runCarla096.sh
 ```
 
-The results will be stored under `data` directory.
+All experimental results will be stored under `data` directory.
 
-
-
-## Remarks
-
-```
-@article{yang2022learning,
-  title={Learning Task-relevant Representations for Generalization via Characteristic Functions of Reward Sequence Distributions},
-  author={Yang, Rui and Wang, Jie and Geng, Zijie and Ye, Mingxuan and Ji, Shuiwang and Li, Bin and Wu, Feng},
-  journal={arXiv preprint arXiv:2205.10218},
-  year={2022}
-}
-```
+## Reference
+Our code is modified based on: 
+1. https://github.com/MIRALab-USTC/RL-CRESP.git 
+2. https://github.com/facebookresearch/deep_bisim4control.git 
