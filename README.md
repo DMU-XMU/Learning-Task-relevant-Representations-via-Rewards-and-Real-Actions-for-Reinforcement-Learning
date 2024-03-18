@@ -18,7 +18,7 @@ For example, run experiments on Cartpole Swingup with background distractions us
 bash run.sh
 ```
 
-Modify the `--env` argument in `run.sh` to specify a different task, use the `--agent` argument to select a reinforcement learning agent from either the curl agent or the drq agent, and utilize the `--auxiliary` argument to choose an auxiliary task between cresp and our method (denoted by rra).
+Modify the `--env` argument in `run.sh` to specify a different task, employ the `--agent` argument to select a reinforcement learning agent from either the curl agent or the drq agent, utilize the `--auxiliary` argument to choose an auxiliary task between cresp and our method (denoted by rra), and utilize the `-s` argument to set the seed.
 
 ## Reproduce the Results on CARLA
 ### install CARLA
