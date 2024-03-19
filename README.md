@@ -39,7 +39,7 @@ pip install pygame
 pip install networkx
 ```
 
-Move the 'carla_env.py' file to the `/home/XXXX/CARLA_0.9.6/PythonAPI/carla/agents/navigation` directory.
+Move the `carla_env.py` file to the `/home/XXXX/CARLA_0.9.6/PythonAPI/carla/agents/navigation` directory.
 
 ### run experiments on CARLA
 First open the CARLA engine:
