@@ -22,4 +22,5 @@ python launch.py \
     --omega_opt_mode min_mu \
     --discount_of_rs 0.8 \
     --extr_update_via_qfloss True \
-    --cuda_id 0
+    --cuda_id 0 \
+    -s 0
