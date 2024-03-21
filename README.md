@@ -12,7 +12,9 @@ pip install -r requirements.txt
 
 ## Reproduce the Results on Distracting DeepMind Control
 
-For example, run experiments on Cartpole Swingup with background distractions using our auxiliary task:
+Move the `background.py` file to the `/home/XXXX/miniconda3/envs/XXXX/lib/python3.6/site-packages/distracting_control` directory.
+
+Then run experiments on Cartpole Swingup with background distractions using our auxiliary task:
 
 ``` bash
 bash run.sh
