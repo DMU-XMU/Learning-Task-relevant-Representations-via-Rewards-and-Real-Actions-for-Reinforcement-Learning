@@ -207,6 +207,7 @@ class DistractingBackgroundEnv(control.Environment, GetStateMixin):
             else:
                 # Randomly pick a video and load all images.
                 # video_path = self._random_state.choice(self._video_paths)
+                # Pick a video in sequence to be played as background at evaluation
                 self.eval_video_idx = (self.eval_video_idx + 1) % len(self._video_paths)
                 video_path = self._video_paths[self.eval_video_idx]
                 file_names = sorted(listdir(video_path))
